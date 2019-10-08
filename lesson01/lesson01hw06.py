@@ -4,15 +4,15 @@
 # Требуется определить номер дня, на который общий результат спортсмена составить не менее b километров.
 # Программа должна принимать значения параметров a и b и  выводить одно натуральное число — номер дня.
 
-start_km = int(input("Стартовый результат: "))
-last_km = int(input("Финальный результат: "))
-days = 0
-
-if start_km > last_km or start_km == last_km:
-    print("Финальный результат должен быть больше стартового")
-
-while start_km < last_km:
-    start_km = start_km + (start_km * 0.1)
-    days += 1
-
-print(f"Спортсмен добьется результат за {days} дней")
+while True:
+    start_km = int(input("Стартовый результат: "))
+    last_km = int(input("Финальный результат: "))
+    days = 0
+    if start_km >= last_km:
+        print("Финальный результат должен быть больше стартового")
+    else:
+        while start_km < last_km:
+            start_km = start_km + (start_km * 0.1)
+            days += 1
+    print(f"Спортсмен добьется результат за {days} дней")
+    break
