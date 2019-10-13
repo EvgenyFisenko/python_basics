@@ -3,12 +3,15 @@
 # Если в рейтинге существуют элементы с одинаковыми значениями,
 # то новый элемент с тем же значением должен разместиться после них.
 
-my_list = [7, 5, 3, 3, 2]
-user_inp = int(input("Введите целое число: "))
-
-pos = 0
-for ind, el in enumerate(my_list):
-    if user_inp <= el:
-        pos = ind + 1
-my_list.insert(pos, user_inp)
-print(my_list)
+while True:
+    if input("Для продолжения нажмите Enter, для выхода наберите Q :") == "Q":
+        break
+    else:
+        my_list = [7, 5, 3, 3, 2]
+        user_inp = int(input("Введите целое число: "))
+        pos = 0
+        for ind, el in enumerate(my_list):
+            if user_inp <= el:
+                pos = ind + 1
+        my_list.insert(pos, user_inp)
+        print(f"{my_list} \n")
