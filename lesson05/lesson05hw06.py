@@ -6,7 +6,7 @@
 
 def to_dict():
     dct = {}
-    with open("hw_06.csv", encoding="cp1251") as file_obj:
+    with open("hw_06.csv", encoding="u8") as file_obj:
         for line in file_obj.readlines():
             line_el = line.strip("\n").split(";")
             sum_if = 0
