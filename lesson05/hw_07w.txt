@@ -1,0 +1,27 @@
+[
+    {
+        "Компания": {
+            "salary": 50000,
+            "profitability": 1.0
+        },
+        "Первая компания": {
+            "salary": 50000,
+            "profitability": 0.33
+        },
+        "Вторая компания": {
+            "salary": 20000,
+            "profitability": 0.11
+        },
+        "Компания номер три": {
+            "salary": 30000,
+            "profitability": 0.6
+        },
+        "Компания 4": {
+            "salary": 191000,
+            "profitability": 10.05
+        }
+    },
+    {
+        "average salary": 68200.0
+    }
+]
