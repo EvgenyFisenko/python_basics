@@ -5,9 +5,7 @@
 
 
 class TrafficLight:
-
-    def __init__(self):
-        self.__color = ""
+    __color = ""
 
     def running(self):
         self.__color = "red"
